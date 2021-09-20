@@ -11,4 +11,9 @@ jobs:
       - name: multiline script
         run: |
           npm -v
-          echo "printing go version"
+          echo "printing npm version"
+      - name: python Shell
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
