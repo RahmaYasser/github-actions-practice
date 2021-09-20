@@ -10,5 +10,5 @@ jobs:
         run: echo "hello wolrd, I'm learning github actions"
       - name: multiline script
         run: |
-          go -v
+          npm -v
           echo "printing go version"
