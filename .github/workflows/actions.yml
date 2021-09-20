@@ -2,12 +2,18 @@ name: Actions Workflow
 
 on: 
   push:
-  pull_request:
-    types:
-      - closed
-      - opened
-      - assigned
-      - reopened
+    branches:
+      - main
+    tags:
+      - v1
+    paths:
+      - "**.js"
+  #pull_request:
+    #types:
+     # - closed
+     # - opened
+     # - assigned
+     # - reopened
 
 jobs:
   run-github-actions:
