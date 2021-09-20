@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-on-windowa:
     runs-on: windows-latest
+    needs: ["run-shell-command"]
     steps:
       - name: show location from power shell
         run: Get-Location
